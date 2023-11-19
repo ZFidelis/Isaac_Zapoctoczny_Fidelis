@@ -1,44 +1,42 @@
-<!-- cadastro -->
+<!-- 
+    Comentários de Alteração
+Todas as seguintes alterações foram feitas na página do grid, foi criado um arquivo .js para facilitar o entendimento.
+1. Função - Foi utilizado 2 Funções, ambas com o mesmo propósito: quando o botão for clicado executará 
+as linhas de códigos correspondentes. 
+2. If/Else - Foi utilizado para o sistema de inversão de cores, mudando uma variável conforme a necessidade, caso essa variável fosse `1` a página estaria nas cores padrões e caso não fosse `1` seria feito a inversão das cores do css pelo javascript
+3. While - Foi utilizado o While para alterar as cores das escritas do header e do footer, pois elas estavam dentro da mesma class, então foi pego um vetor relacionado a cada elemento. Com isso foi feito um laço de repetição para percorrer o vetor inteiro e mudar todas as cores
+-->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título da página exibido na aba do navegador -->
     <title>Página de Registro</title>
-    <!-- Link para o arquivo de estilo CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!-- Div que envolve o conteúdo da página -->
     <div class="container">
-        <!-- Título "Registro" -->
         <h2>Registro</h2>
-        <!-- Formulário de registro com método POST -->
         <form action="info.html" method="post">
-            <!-- Campo de entrada para o nome de usuário -->
             <label for="new-username">Usuario:</label>
             <input type="text" id="new-username" name="new-username" required>
 
-            <!-- Campo de entrada para o endereço de e-mail -->
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
 
-            <!-- Campo de entrada para a senha -->
             <label for="new-password">Senha:</label>
             <input type="password" id="new-password" name="new-password" required>
 
-            <!-- Campo de entrada para a data de nascimento -->
             <label for="birthdate">Data de Nascimento:</label>
             <input type="date" id="birthdate" name="birthdate" required>
 
-            <!-- Botão de envio do formulário -->
             <a href="info.html">
             <input type="submit" value="Registrar">
             </a>
         </form>
         
-        <!-- Link para a página de login -->
         <p>Já tem uma conta? <a href="index.html">Faça login</a></p>
     </div>
 </body>
